@@ -16,6 +16,13 @@ public class Animal {
 		 this.idade = idade;
 		 
 	 }
+	 //construtor padrão do java
+	 public Animal() {}
+	 //para dar ascesso utilizamos os metodos acessores
+	 // GETTER e SETTER
+	 public Animal(String nome) {
+		 this.nome = nome;
+	 }
 	
 	 public void setNome(String nome) {
 		 this.nome = nome;

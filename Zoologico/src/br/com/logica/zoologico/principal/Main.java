@@ -35,6 +35,25 @@ public class Main {
 		}else {
 			System.out.println("Não é adulto");
 		}
+		
+		System.out.println("---------------------------------");
+		
+		Animal cavalo = new Animal("Agnaldo");
+		
+		cavalo.setEspecie("cavalo");
+		cavalo.setIdade(4);
+		
+		cavalo.emitirSom();
+		
+		System.out.println("Olá, seu animal é um " + cavalo.getEspecie()+", o nome dele é " + cavalo.getNome() + " e tem "+cavalo.getIdade()+" anos");
+		
+		if(cavalo.isAdult()) {
+			System.out.println("É adulto");
+		}else {
+			System.out.println("Não é adulto");
+		}
+		
+		
 	}
 
 }
