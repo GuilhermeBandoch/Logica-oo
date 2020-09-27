@@ -30,4 +30,12 @@ public class Animal {
 		 return idade;
 	 }
 	 
+	 public void emitirSom() {
+		 System.out.println("Som do animal");
+	 }
+	 
+	 public boolean isAdult() {
+		 return idade >1;
+	 }
+	 
 }
