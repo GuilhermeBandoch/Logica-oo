@@ -9,7 +9,7 @@ public abstract class Animal {
 	private String especie;
 	private int idade;
 	private String corPelo;
-	private boolean estaVivo;
+	protected boolean estaVivo;
 
 	public Animal(String nome, String especie, int idade, String corPelo) {
 

@@ -14,8 +14,11 @@ public class Cavalo extends Animal {
 	
 	@Override
 	public void emitirSom() {
-		System.out.println("Som de cavalo");
-		
+		if(estaVivo) {
+			System.out.println("som de cavalo");
+		}else {
+			System.out.println("O animal morreu");
+		}
 	}
 
 }
