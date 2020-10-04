@@ -12,5 +12,11 @@ public class Gato extends Animal {
 		super(nome);
 	}
 	
+	@Override
+	public void emitirSom() {
+		System.out.println("Miando");
+		
+	}
+	
 	
 }
