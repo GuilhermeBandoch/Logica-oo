@@ -19,9 +19,14 @@ public class Gato extends Animal {
 		}else {
 			System.out.println("O animal morreu");
 		}
-		
-		
 	}
 	
+	@Override
+	public boolean isAdult() {
+		if(estaVivo) {
+			return idade >=1;
+		}
+		return false;
+	}
 	
 }

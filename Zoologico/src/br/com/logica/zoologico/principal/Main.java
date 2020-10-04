@@ -27,7 +27,7 @@ public class Main {
 		
 		//atribuindo os valores as propriedade
 		
-		cachorro.morrer();
+		//cachorro.morrer();
 		
 		cachorro.emitirSom();
 		

@@ -7,7 +7,7 @@ public abstract class Animal {
 	// nesse momento as propiedades são públicas
 	private String nome;
 	private String especie;
-	private int idade;
+	protected int idade;
 	private String corPelo;
 	protected boolean estaVivo;
 
@@ -65,7 +65,7 @@ public abstract class Animal {
 			return false;
 		}
 	}
-	
+
 	public boolean isEstaVivo() {
 		return estaVivo;
 	}
@@ -73,6 +73,7 @@ public abstract class Animal {
 	//quando adicionando o final no metodo
 	//é impossovel fazer a sobrescrita de um metodo pelas
 	//classes filhas
+	
 	public final void morrer() {
 		this.estaVivo = false;
 	}

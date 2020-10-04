@@ -20,5 +20,13 @@ public class Cavalo extends Animal {
 			System.out.println("O animal morreu");
 		}
 	}
+	
+	@Override
+	public boolean isAdult() {
+		if(estaVivo){
+			return idade >= 6;
+		}
+		return false;
+	}
 
 }

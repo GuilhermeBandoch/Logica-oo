@@ -19,7 +19,14 @@ public class Cachorro extends Animal {
 		} else {
 			System.out.println("O animal morreu");
 		}
-
+	}
+	
+	@Override
+	public boolean isAdult() {
+		if(estaVivo) {
+			return idade >=2;
+		}
+		return false;
 	}
 
 }
