@@ -1,12 +1,15 @@
 package br.com.logica.zoologico.principal;
 
 import br.com.logica.zoologico.classes.Animal;
+import br.com.logica.zoologico.heranca.Cachorro;
+import br.com.logica.zoologico.heranca.Cavalo;
+import br.com.logica.zoologico.heranca.Gato;
 
 public class Main {
 	
 	public static void main(String[] args) {
 		// Criando uma nova instancia do objeto
-		Animal gato = new Animal("Jojo todinho","Gato",1);
+		Gato gato = new Gato("Jojo todinho","Gato",1,"preto");
 		
 		gato.emitirSom();
 		
@@ -20,7 +23,7 @@ public class Main {
 		
 		System.out.println("---------------------------------");
 		// Criando uma nova instancai do objeto
-		Animal cachorro = new Animal("Spike","cachorro",3);
+		Cachorro cachorro = new Cachorro("Spike","cachorro",3,"branco");
 		
 		//atribuindo os valores as propriedade
 		
@@ -38,10 +41,11 @@ public class Main {
 		
 		System.out.println("---------------------------------");
 		
-		Animal cavalo = new Animal("Agnaldo");
+		Cavalo cavalo = new Cavalo("Agnaldo","cavalo",4,"cinza");
 		
-		cavalo.setEspecie("cavalo");
-		cavalo.setIdade(4);
+		//cavalo.setEspecie("cavalo");
+		//cavalo.setIdade(4);
+		//cavalo.setcorPelo("cinza");
 		
 		cavalo.emitirSom();
 		
