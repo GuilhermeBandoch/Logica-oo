@@ -9,6 +9,7 @@ public abstract class Animal {
 	private String especie;
 	private int idade;
 	private String corPelo;
+	private boolean estaVivo;
 
 	public Animal(String nome, String especie, int idade, String corPelo) {
 
@@ -16,6 +17,7 @@ public abstract class Animal {
 		this.especie = especie;
 		this.idade = idade;
 		this.corPelo = corPelo;
+		this.estaVivo = true;
 
 	}
 
@@ -27,6 +29,7 @@ public abstract class Animal {
 	// GETTER e SETTER
 	public Animal(String nome) {
 		this.nome = nome;
+		this.estaVivo = true;
 	}
 
 	public void setNome(String nome) {
@@ -56,7 +59,19 @@ public abstract class Animal {
 	public abstract void emitirSom();
 
 	public boolean isAdult() {
-		return idade > 1;
+		if(estaVivo) {
+			return idade >= 2;
+		}else {
+			return false;
+		}
+	}
+	
+	public boolean isEstaVivo() {
+		return estaVivo;
+	}
+	
+	public void morrer() {
+		this.estaVivo = false;
 	}
 
 	public void setcorPelo(String cor) {

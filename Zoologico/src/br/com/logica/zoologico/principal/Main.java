@@ -32,11 +32,12 @@ public class Main {
 		
 		System.out.println("Olá, seu animal é um " + cachorro.getEspecie()+", o nome dele é " + cachorro.getNome() + "e tem "+cachorro.getIdade()+" anos");
 
+		cachorro.morrer();
 		
 		if(cachorro.isAdult()) {
 			System.out.println("É adulto");
 		}else {
-			System.out.println("Não é adulto");
+			System.out.println("Não é adulto ou está morto");
 		}
 		
 		System.out.println("---------------------------------");
