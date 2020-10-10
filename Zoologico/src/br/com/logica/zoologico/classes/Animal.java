@@ -56,28 +56,10 @@ public abstract class Animal {
 		return idade;
 	}
 
-	public abstract void emitirSom();
-
-	public boolean isAdult() {
-		if(estaVivo) {
-			return idade >= 2;
-		}else {
-			return false;
-		}
-	}
-
 	public boolean isEstaVivo() {
 		return estaVivo;
 	}
 	
-	//quando adicionando o final no metodo
-	//é impossovel fazer a sobrescrita de um metodo pelas
-	//classes filhas
-	
-	public final void morrer() {
-		this.estaVivo = false;
-	}
-
 	public void setcorPelo(String cor) {
 		this.corPelo = cor;
 	}
