@@ -21,3 +21,20 @@ READ   ---- SELECT  ---- CONSULTAR
 UPDATE ---- UPDATE  ---- ALTERAR
 DELETE ---- DELETE  ---- EXCLUIR
 
+-- Inserindo registros
+
+use zoo;
+
+INSERT INTO animal(especie, idade, estavivo)values("Peixe", 1, 1);
+INSERT INTO animal(especie, idade, estavivo)values("Tartaruga", 20, 1);
+INSERT INTO animal(especie, idade, estavivo)values("Macaco", 20, 1);
+INSERT INTO animal(especie, idade, estavivo)values("Pato", 2, 1);
+INSERT INTO animal(especie, idade, estavivo)values("Lesma", 2, 1);
+INSERT INTO animal(especie, idade, estavivo)values("Cavalo", 5, 1);
+
+
+-- consultando os registros da tabela
+
+SELECT especie, idade, estavivo FROM animal;
+
+
