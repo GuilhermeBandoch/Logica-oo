@@ -37,4 +37,10 @@ INSERT INTO animal(especie, idade, estavivo)values("Cavalo", 5, 1);
 
 SELECT especie, idade, estavivo FROM animal;
 
+-- buscar todas as colunas da tabela
+SELECT * FROM animal;
+
+-- Adiciona uma nova coluna
+ALTER TABLE animal ADD COLUMN nome VARCHAR(100); 
+
 
