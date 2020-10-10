@@ -32,6 +32,7 @@ public class Cavalo extends Animal {
 	@Override
 	public void morrer() {
 		this.estaVivo = false;
+		
 	}
 
 }
