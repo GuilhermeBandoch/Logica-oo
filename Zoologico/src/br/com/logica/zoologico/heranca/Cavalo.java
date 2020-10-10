@@ -29,4 +29,9 @@ public class Cavalo extends Animal {
 		return false;
 	}
 
+	@Override
+	public void morrer() {
+		this.estaVivo = false;
+	}
+
 }
