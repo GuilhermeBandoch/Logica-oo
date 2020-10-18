@@ -227,3 +227,8 @@ select * from fornecedor where id = 1; -- DUN RITE LAWN MAINTENANCE
 
 -- consulta liggando tabelas
 select p.descricao, p.valor,p.id_fornecedor,f.nome from produto p inner join fornecedor f on p.id_fornecedor = f.id;
+
+select c.nome as 'Nome cliente ', f.nome as 'Nome fornecedor',  vend.nome as 'nome vendedor',v.valor, v.desconto, v.total from venda v
+inner join fornecedor f on v.id_fornecedor = f.id
+inner join cliente c on v.id_cliente = c.id
+inner join vendedor vend on v.id_vendedor = vend.id;
