@@ -291,3 +291,6 @@ SELECT format(avg(P.VALOR),2) AS 'MEDIA PRECO COM FORMAT',
     select upper(descricao), descricao from produto;
     
     insert into produto(codigo_produto, descricao) values ('987354', 'Mesa game');
+    
+    ## completa uma string a direita com um caractere desejado
+    select rpad(descricao,10,'***') from produto;
