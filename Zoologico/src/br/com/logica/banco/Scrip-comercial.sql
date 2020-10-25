@@ -294,3 +294,11 @@ SELECT format(avg(P.VALOR),2) AS 'MEDIA PRECO COM FORMAT',
     
     ## completa uma string a direita com um caractere desejado
     select rpad(descricao,10,'***') from produto;
+    
+     ## Consultas com funções da Data tempo
+    ## retornar a diferença entre datas - datediff()
+    select datediff('2015-03-17','2015-03-15');
+    
+    ## converter de string para data - str_ti_date() YEAR
+    SELECT STR_TO_DATE("August 05 2017", "%M %d %Y");
+    SELECT STR_TO_DATE("August,05,2017", "%M,%e,%Y");S
