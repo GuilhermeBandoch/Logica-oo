@@ -265,3 +265,13 @@ SELECT format(avg(P.VALOR),2) AS 'MEDIA PRECO COM FORMAT',
     HAVING VALOR > 9000
     ORDER BY 4 ASC
     ;
+    
+    
+    ## valor máximo e valor mínimo - max() / min()
+    SELECT MAX(VALOR) AS 'Maior valor venda',
+			min(valor) as 'Menor valor venda'
+	FROM VENDA;	
+    
+    -- menor = 4650.64
+    -- maior = 25040.02
+    select * from venda order by valor asc;
