@@ -282,3 +282,12 @@ SELECT format(avg(P.VALOR),2) AS 'MEDIA PRECO COM FORMAT',
     select * from produto;
     
     select concat('R$', format(sum(valor) , 2)) as 'Total valor de produtos' from produto;
+    
+    
+    ## registros em mínulculo -lcase() / lower()
+    select lower(nome), upper(nome) from cliente;
+    
+    ## registros em mauísculo - upper()
+    select upper(descricao), descricao from produto;
+    
+    insert into produto(codigo_produto, descricao) values ('987354', 'Mesa game');
