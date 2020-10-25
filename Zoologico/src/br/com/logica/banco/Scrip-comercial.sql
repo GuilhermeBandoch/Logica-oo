@@ -308,3 +308,8 @@ SELECT format(avg(P.VALOR),2) AS 'MEDIA PRECO COM FORMAT',
     
     ## retorna o valor numérico do dia da semana
     select dayofweek(data_venda) from venda
+    
+    ## buscar entre duas data - periodo
+    select * from venda
+    where data_venda between '2015-01-02' and '2015-01-03'
+    select * from venda order by data_venda desc;
