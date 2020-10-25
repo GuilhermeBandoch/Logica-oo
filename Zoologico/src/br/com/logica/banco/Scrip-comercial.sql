@@ -275,3 +275,10 @@ SELECT format(avg(P.VALOR),2) AS 'MEDIA PRECO COM FORMAT',
     -- menor = 4650.64
     -- maior = 25040.02
     select * from venda order by valor asc;
+    
+    ## somar campos - sum()
+    select sum(campo1) from nome_tabela;
+    
+    select * from produto;
+    
+    select concat('R$', format(sum(valor) , 2)) as 'Total valor de produtos' from produto;
