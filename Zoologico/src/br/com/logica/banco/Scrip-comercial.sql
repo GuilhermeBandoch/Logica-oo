@@ -257,3 +257,11 @@ SELECT format(avg(P.VALOR),2) AS 'MEDIA PRECO COM FORMAT',
 	
 	## para contar registros - count()
     select count(*) from PRODUTO;
+    
+    ## verificar quantidade - having count()
+    
+    SELECT V.CODIGO_VENDA, V.ID_VENDEDOR, V.ID_CLIENTE, VALOR
+    FROM VENDA V
+    HAVING VALOR > 9000
+    ORDER BY 4 ASC
+    ;
