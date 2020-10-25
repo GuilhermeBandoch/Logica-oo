@@ -247,3 +247,10 @@ inner join vendedor vend on v.id_vendedor = vend.id;
 select * 
 from venda v
 inner join fornecedor f on v.id_fornecedor = f.id
+
+
+## calcula o valor médio referente a uma coluna - avg()
+
+SELECT format(avg(P.VALOR),2) AS 'MEDIA PRECO COM FORMAT',
+		avg(P.VALOR) AS 'MEDIA PRECO SEM FORMAT'
+	FROM PRODUTO P;
