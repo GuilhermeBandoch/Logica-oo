@@ -301,4 +301,10 @@ SELECT format(avg(P.VALOR),2) AS 'MEDIA PRECO COM FORMAT',
     
     ## converter de string para data - str_ti_date() YEAR
     SELECT STR_TO_DATE("August 05 2017", "%M %d %Y");
-    SELECT STR_TO_DATE("August,05,2017", "%M,%e,%Y");S
+    SELECT STR_TO_DATE("August,05,2017", "%M,%e,%Y");
+    
+    ## retorna o dia d mês de uma data
+    select dayofmonth(data_venda) from venda;
+    
+    ## retorna o valor numérico do dia da semana
+    select dayofweek(data_venda) from venda
